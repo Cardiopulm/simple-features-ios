@@ -2,21 +2,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "SF",
+    name: "SimpleFeatures",
     platforms: [
         .iOS(.v11),
         .macOS(.v10_12)
     ],
     products: [
-        .library(
-            name: "SF",
-            targets: ["SF"]
-        ),
+        .library(name: "SimpleFeatures", targets: ["SimpleFeatures"])
     ],
     targets: [
         .target(
-            name: "SF",
-            path: "Sources/SF"
+            name: "SimpleFeatures",
+            path: "Sources/SimpleFeatures"
         )
     ]
 )
